@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    background-image:linear-gradient(to left, #60B8DA, #D97588);
+    color: white;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px 0px;
+}
+.navbar h2{
+    font-size: 2rem;
+}
+.input{
+    width: 350px;
+    margin-top: 2px;
+    text-align: center;
+}
+.input input{
+    width: 75%;
+    outline: none;
+    padding: 8px;
+    border:1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+.input input:focus{
+    box-shadow: 0 0 5px #D97588;
+    border:1px solid #D97588;
+}
+.input button{
+    cursor: pointer;
+    padding: 8px;
+    color: black;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: #D97588;
+    border: 1px solid #D97588;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.input button:hover{
+    background-color: transparent;
+    color: white;
+}
+.to-do-items{
+    width: 500px;
+    margin: auto;
+}
+.item{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+.item:hover{
+    box-shadow: 0 0 20px #D97588;
+    border:1px solid #D97588;
+}
+.item i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+
+/* INICIO BREAK-POINTS */
+
+
+@media(max-width:768px){
+    .navbar{
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar h2{
+        margin:10px 0;
+    }
+    .input{
+        width: 100%;
+    }
+    .to-do-items{
+        width: 100%;
+    }
+}
+@media(max-width:480px){
+    .input input{
+        width: 74%;
+    }
+}
+@media(max-width:320px){
+    .input input{
+        width: 60%;
+    }
+}
